@@ -1,0 +1,50 @@
+To-Dos
+
+KEEP SHORT
+write boring dry section
+- history
+- use cases
+- popular libraries
+
+Create the short reactive example
+- onClick event, some other event
+
+Create simple reactive tutorial
+- ??
+- profit
+- <fix this> vs change from imperative to functional
+- bacon 
+
+Basic Bacon Tutorial
+
+- simple examples
+- EventStream vs Property, both observables
+- Basic methods w/ examples /tutorials
+  -
+  -
+  -
+
+Advanced Tutorials-ish
+
+Node Example
+- One server sends SSE events
+- you write program to consume and blah
+- SSE example
+- response
+- receives messages from other server of change events to a specific model
+  // update to database????
+  // minimize writes
+
+Frontend example
+- event stream from UI interaction
+- combine different ui intereactions
+- kick off requests and flatten
+
+Combined
+- node.js
+- frontend.js
+- talk to front and backend, recycles files maybe?
+
+Choose to work on frontend or backend
+Create webservice with SSEs ??? multiple routes for frontend or backend examples
+
