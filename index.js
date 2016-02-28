@@ -10,7 +10,7 @@ app.use('/events', sse.head(), sse.ticker({seconds: 15}),
       .onValue(value => sse.send({event: 'new object', data: makeData()})(req, res));
   })
 
-app.listen(9000)
+app.listen(process.env.PORT || 9000)
 
 function makeData() {
   // 0-3 times do
