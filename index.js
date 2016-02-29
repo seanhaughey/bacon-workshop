@@ -4,11 +4,26 @@ const sse = require('tiny-sse')
 const $ = require('baconjs')
 const _ = require('lodash')
 
-app.use('/events', sse.head(), sse.ticker({seconds: 15}),
+app.use('/events',
+  (req, res, next) => {
+    res.setHeader(
+        'Access-Control-Allow-Origin', '*'
+    )
+    return next(null)
+  },
+  sse.head(),
+  sse.ticker({seconds: 15}),
   (req, res) => {
     $.interval(parseInt(req.query.interval)||1000)
-      .onValue(value => sse.send({event: 'new object', data: makeData()})(req, res));
+      .onValue(value => sse.send({
+        event: 'new object',
+        data: makeData()
+      })(req, res));
   })
+
+app.get('/ping', (req, res, next) => {
+  res.send('Ok')
+})
 
 app.listen(9000)
 
