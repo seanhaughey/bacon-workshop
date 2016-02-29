@@ -25,7 +25,7 @@ app.get('/ping', (req, res, next) => {
   res.send('Ok')
 })
 
-app.listen(9000)
+app.listen(process.env.PORT || 9000)
 
 function makeData() {
   // 0-3 times do
