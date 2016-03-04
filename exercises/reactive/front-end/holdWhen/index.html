@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bacon.js/0.7.83/Bacon.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="main container">
+      <h3>Exploring the Observable.scan(accumulator, combiner) method</h3>
+      <div id="hold-when" class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="message-input">
+              Type messages and press &lt;enter&gt;
+            </label>
+            <input class="form-control message-input" type="text">
+          </div>
+          <div class="valve-indicator"></div>
+        </div>
+        <div class="col-xs-6">
+          A list of messages should form below as you type and press
+          &lt;enter&gt;. But only when the valve is open
+          <div class="messages">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bacon-holdWhen.solution.js"></script>
+  </body>
+</html>
