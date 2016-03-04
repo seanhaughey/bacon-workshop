@@ -1,13 +1,13 @@
 $(function(){
-  var messagesContainer = $('#filter .messages')
-  var messageInput = $('#filter .message-input')
+  var messagesContainer = $('#scan .messages')
+  var messageInput = $('#scan .message-input')
   var messageStream = messageInput.asEventStream('keypress')
   .filter(isEnter)
   .map(extractValue)
   .map(addTime)
   .map(makeAlert)
-  messageStream.onValue(updateContent(messagesContainer))
-  messageStream.onValue(emptyInput(messageInput))
+  .scan('', concat)
+  .onValue(updateContent(messagesContainer))
 
   function isEnter(e){
     return e.keyCode === 13
@@ -18,8 +18,11 @@ $(function(){
   }
 
   function addTime(message){
-    var d = new Date()
-    return d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds() + ' - ' + message
+    var d = new Date(),
+    hours = d.getHours(),
+    minutes = d.getMinutes(),
+    seconds = d.getSeconds()
+    return hours + ':' + minutes + ':' + seconds + ' - ' + message
   }
 
   function makeAlert(message){
@@ -37,5 +40,9 @@ $(function(){
     return function(){
       input.val('')
     }
+  }
+
+  function concat(str1, str2){
+    return str1 + str2
   }
 })

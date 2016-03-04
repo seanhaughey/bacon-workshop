@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bacon.js/0.7.83/Bacon.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="main container">
+    <h3>Exploring the Observable.map(mapper) method</h3>
+      <div id="map" class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="message-input">
+              Type a message
+            </label>
+            <input class="form-control message-input" type="text">
+          </div>
+        </div>
+        <div class="col-xs-6">
+          Content should show up below as you type...
+          <div class="message">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bacon-map.js"></script>
+  </body>
+</html>
