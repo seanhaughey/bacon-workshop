@@ -1,8 +1,4 @@
-const mocha = require('mocha');
-const chai
-
 const breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"];
-
 
 function makeMeatTags(meats) {
   //write code here

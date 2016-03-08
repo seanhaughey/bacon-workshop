@@ -5,35 +5,23 @@ function addFive(numbers) {
   }
   return result
 }
-
 addFive([1, 2, 3])
 // >> [6, 7, 8]
 
 function addFive(numbers) {
-  return numbers.map(number=>{return number + 5})
+  return numbers.map(number => number + 5)
 }
 
 addFive([1, 2, 3])
 // >> [6, 7, 8]
 
 function addVal(value) {
-  // return number => {return number + value}
-  return function(number) {return number + value}
+  return number => number + value
 }
 
-console.log([1, 2, 3].map(addVal(5)))
+[1, 2, 3].map(addVal(5))
 // // >> [6, 7, 8]
 
-function add(a, b) {
-  return a + b
-}
-
-function foo(a, b, c) {
-}
-
-foo.bind(null, 1, 2)
-
-foo(3)
-
-console.log([1, 2, 3].map(add.bind(null, 5)))
+function add(a, b) {return a + b}
+[1, 2, 3].map(add.bind(null, 5))
 // >> [6, 7, 8]

@@ -45,6 +45,21 @@ Combined
 - frontend.js
 - talk to front and backend, recycles files maybe?
 
-Choose to work on frontend or backend
-Create webservice with SSEs ??? multiple routes for frontend or backend examples
+√ Choose to work on frontend or backend
+√ Create webservice with SSEs ??? multiple routes for frontend or backend examples
+
+1. ways to create an observable (stream, promise, callback, more)
+2. subscribe to value
+3. Busses maybe? 
+4. Prop >> EventStream, vice versa
+5. List of other resources
+  - bacon docs
+  - bacon cheatsheet
+  - bacon schematics
+  - bacon nodeschool tutorial
+  - react-bacon
+6. ES v P: light change vs current color
+7. delay/debounce?
+8. note about no react app
+
 

@@ -9,7 +9,7 @@ $.sequentially(200, _.times(100))
     _.times(20, i => i % 2)))
 .onValue(console.log);
 
-//stream.skipWhile(property)
+// stream.skipWhile(property)
 $.sequentially(10, _.times(50))
 .skipWhile(
   $.sequentially(
