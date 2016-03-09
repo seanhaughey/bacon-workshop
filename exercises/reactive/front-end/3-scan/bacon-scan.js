@@ -12,7 +12,7 @@ $(function(){
   //     var message = e.target.value
   //     message = addTime(message)
   //     var content = makeAlert(message)
-  //     messagesContainer.prepend(content)
+  //     messagesContainer.append(content)
   //     emptyInput(messageInput)
   //   }
   // })
