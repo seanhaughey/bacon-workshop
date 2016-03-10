@@ -15,7 +15,7 @@ for (var k = 0; k < breakfastMeats.length; k++) {
   for (var j = k+1; j < breakfastMeats.length; j++) {
     if (breakfastMeats[k] === breakfastMeats[j]) {
       breakfastMeats = breakfastMeats.slice(0, j).concat(
-                       breakfastMeats.slice(j+1, breakfastMeats.length)); 
+                       breakfastMeats.slice(j+1, breakfastMeats.length));
     }
   }
 }
