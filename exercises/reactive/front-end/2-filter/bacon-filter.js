@@ -19,9 +19,11 @@ $(function(){
 
   /*  Rewrite the above in a functional reactive style, starting with an
     EventStream from the ".message-input". You can reuse some of the helper
-    functions below */
+    functions below 
 
-  var inputStream = messageInput.asEventStream('keypress')
+    solution: Time content appears only on enter keypress*/
+
+  var inputStream;
 
   /*  You can use the inputStream's .filter(filterer) method to filter out
     non-<enter> key presses */
