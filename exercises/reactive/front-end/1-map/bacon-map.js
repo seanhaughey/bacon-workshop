@@ -14,10 +14,10 @@ $(function(){
   // }
 
   /*  Rewrite the above in a functional reactive style, starting with an
-    EventStream from the ".message-input". You can reuse the helper function
-    below */
+    EventStream from the ".message-input". Start by creating an event stream off 
+    of the messageInput above that listens for keypress */
 
-  var inputStream = messageInput.asEventStream('keypress')
+  var inputStream; //stream generation here
 
   /*  You can call the inputStream's .map(mapper) method to create a new
     stream whose elements are derived from the raw event objects */
