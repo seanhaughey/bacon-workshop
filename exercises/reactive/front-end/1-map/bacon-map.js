@@ -16,7 +16,7 @@ $(function(){
   /*  Rewrite the above in a functional reactive style, starting with an
     EventStream from the ".message-input". You can reuse the helper function
     below */
-g
+
   var inputStream = messageInput.asEventStream('keypress')
 
   /*  You can call the inputStream's .map(mapper) method to create a new
