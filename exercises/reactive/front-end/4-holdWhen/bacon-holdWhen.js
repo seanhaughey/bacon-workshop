@@ -5,7 +5,8 @@ $(function(){
 
   /*  In the commented out code below, in an imperative style, we add a message
     to the ".messages" element with the value of the input when the user presses
-    <enter>. If the valve is closed, we hold onto the messages in an array, and send them through when it's open again */
+    <enter>. If the valve is closed, we hold onto the messages in an array, and 
+    send them through when it's open again */
 
   // var messageBuffer = []
   // var valveClosed = true
@@ -41,9 +42,13 @@ $(function(){
 
   /*  Rewrite the above in a functional reactive style, starting with an
     EventStream from the ".message-input". You can reuse some of the helper
-    functions below, modifying them as necessary */
+    functions below, modifying them as necessary. Begin by creating a stream 
+    from the messageInput as before.
 
-  var messageStream = messageInput.asEventStream('keypress')
+    Solution: Expect input to not be inserted when the valve is closed, and 
+    appended when open.*/
+
+  var messageStream;
 
   /*  You can use the .map, .filter, .scan and .onValue methods from the "map",
     "filter" and "scan" examples */

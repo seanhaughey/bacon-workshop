@@ -19,9 +19,13 @@ $(function(){
 
   /*  Rewrite the above in a functional reactive style, starting with an
     EventStream from the ".message-input". You can reuse some of the helper
-    functions below */
+    functions below 
 
-  var inputStream = messageInput.asEventStream('keypress')
+    Solution: On enter press, we add the new content to the messagesContainer
+    appending it to existing input. Begin, like before, with creating the input
+    stream.*/
+
+  var inputStream;
 
   /*  You can use the .map, .filter and .onValue methods from the "map" and
     "filter" examples */
