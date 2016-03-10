@@ -3,7 +3,10 @@ $(function(){
   var messageContent = $('#map .message')
 
   /*  In the commented out code below, in an imperative style, update the
-    content of ".message" when the user types in the input */
+    content of ".message" when the user types in the input. 
+    
+    Solution: When this is updated correctly, expect to see the input content 
+    appear as you type.*/
 
   // messageInput.on('keypress', updateContent)
   //
