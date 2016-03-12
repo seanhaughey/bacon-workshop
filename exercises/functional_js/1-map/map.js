@@ -2,10 +2,12 @@ var breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
 
 /*  In the commented out code below, in an imperative style, we update the breakfastMeats array, with standardized capitalization */
 
-// for (var i = 0; i < breakfastMeats.length; i++) {
-//   breakfastMeats[i] = breakfastMeats[i].slice(0, 1).toUpperCase() +
-//                       breakfastMeats[i].slice(1, breakfastMeats[i].length)
-//                       .toLowerCase();
+// var meat, i, first, rest
+// for (i in breakfastMeats) {
+//   meat = breakfastMeats[i]
+//   first = meat[0].toUpperCase()
+//   rest = meat.slice(1, meat.length).toLowerCase()
+//   breakfastMeats[i] = first + rest
 // }
 // // breakfastMeats === ['Bacon', 'Bacon', 'Sausage', 'Sausage']
 // console.log(breakfastMeats)
