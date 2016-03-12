@@ -4,22 +4,24 @@ var breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
   event breakfastMeats array with standardized capitalization. We then look through
   the modified array, removing duplicates */
 
-// for (var i = 0; i < breakfastMeats.length; i++) {
-//   breakfastMeats[i] = breakfastMeats[i].slice(0, 1).toUpperCase() +
-//                       breakfastMeats[i].slice(1, breakfastMeats[i].length)
-//                       .toLowerCase();
+// var meat, i, first, rest
+// for (i in breakfastMeats) {
+//   meat = breakfastMeats[i]
+//   first = meat[0].toUpperCase()
+//   rest = meat.slice(1, meat.length).toLowerCase()
+//   breakfastMeats[i] = first + rest
 // }
 // // breakfastMeats === ['Bacon', 'Bacon', 'Sausage', 'Sausage']
-//
-// for (var k = 0; k < breakfastMeats.length; k++) {
-//   meat = breakfastMeats[k]
-//   if (breakfastMeats.indexOf[meat] !== k){
-//     breakfastMeats = breakfastMeats.slice(0, k).concat(
-//                      breakfastMeats.slice(k+1, breakfastMeats.length)
-//     )
+// var firstMeats, lastMeats
+// for (i = 0; i < breakfastMeats.length; i++) {
+//   meat = breakfastMeats[i]
+//   if (breakfastMeats.indexOf(meat) !== i) {
+//     firstMeats = breakfastMeats.slice(0, i)
+//     lastMeats = breakfastMeats.slice(i+1, breakfastMeats.length)
+//     breakfastMeats = firstMeats.concat(lastMeats)
 //   }
 // }
-// // breakfastMeats === ['Bacon', 'Sausage']
+// breakfastMeats === ['Bacon', 'Sausage']
 // console.log(breakfastMeats)
 
 var simplified;
