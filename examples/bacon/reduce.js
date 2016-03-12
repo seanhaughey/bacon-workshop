@@ -3,13 +3,13 @@ _ = require('lodash');
 
 const countTen = $.sequentially(100, _.times(10));
 
-countTen.scan(0, add)
-.log('scan');
+// countTen.scan(0, add)
+// .log('scan');
 
-countTen.fold(0, add)
-.log('fold');
+// countTen.fold(0, add)
+// .log('fold');
 
-countTen.toProperty(0)
+countTen.toProperty(50)
 .scan(100, add)
 .log('propertyScan')
 

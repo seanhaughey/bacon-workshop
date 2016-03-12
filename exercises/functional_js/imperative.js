@@ -28,4 +28,6 @@ for (var i = 0; i < breakfastMeats.length; i++) {
   tableData += "<td>"+breakfastMeats[i]+"</td>"
 }
 
-console.log(breakfastMeats);
+console.log(tableData);
+
+// <td>Bacon</td><td>Sausage</td>

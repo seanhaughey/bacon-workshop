@@ -1,6 +1,7 @@
 var breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
 
-/*  In the commented out code below, in an imperative style, we update the breakfastMeats array, with standardized capitalization. We then look through
+/*  In the commented out code below, in an imperative style, we update the 
+  event breakfastMeats array with standardized capitalization. We then look through
   the modified array, removing duplicates */
 
 // for (var i = 0; i < breakfastMeats.length; i++) {

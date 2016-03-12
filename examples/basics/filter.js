@@ -7,5 +7,6 @@ const famousFoods = [
    birthYear: 1728}
 ]
 
-famousFoods.filter(food => {return food.birthYear % 2 === 1})
-
+console.log(
+  famousFoods.filter(food => {return food.birthYear % 2 === 1})
+)
