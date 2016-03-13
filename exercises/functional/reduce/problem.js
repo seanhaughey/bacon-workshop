@@ -1,4 +1,4 @@
-var breakfastMeats = ['bacon', 'Bacon', 'sausage', 'SauSaGe']
+const breakfastMeats = ['bacon', 'Bacon', 'sausage', 'SauSaGe']
 
 /*  In the commented out code below, in an imperative style, we update the
   breakfastMeats array, with standardized capitalization. We then look through
@@ -30,7 +30,7 @@ var breakfastMeats = ['bacon', 'Bacon', 'sausage', 'SauSaGe']
 // console.log(tableData)
 // // => '<p>Bacon</p><p>Sausage</p>'
 
-var paragraphs;
+const paragraphs;
 
 /*  Rewrite the above in a functional style. You should use the breakfastMeats.map
   and breakfastMeats.filter methods from the "map" and "filter" exercies. You

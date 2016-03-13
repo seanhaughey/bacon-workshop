@@ -1,4 +1,4 @@
-var breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
+const breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
 
 /*  In the commented out code below, in an imperative style, we update the 
   event breakfastMeats array with standardized capitalization. We then look through
@@ -24,7 +24,7 @@ var breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
 // breakfastMeats === ['Bacon', 'Sausage']
 // console.log(breakfastMeats)
 
-var simplified;
+const simplified;
 
 /*  Rewrite the above in a functional style. You should use the breakfastMeats.map
   method, as in the "map" exercise. Then filter out duplicates with the

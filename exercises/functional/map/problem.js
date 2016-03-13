@@ -1,4 +1,4 @@
-var breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
+const breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
 
 /*  In the commented out code below, in an imperative style, we update the breakfastMeats array, with standardized capitalization */
 
@@ -12,7 +12,7 @@ var breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
 // // breakfastMeats === ['Bacon', 'Bacon', 'Sausage', 'Sausage']
 // console.log(breakfastMeats)
 
-var capitalized;
+const capitalized;
 
 /*  Rewrite the above in a functional style. You should use the
   breakfastMeats.map method and define a pure capitalize(word) mapper function.
