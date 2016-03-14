@@ -24,7 +24,15 @@ const breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
 // breakfastMeats === ['Bacon', 'Sausage']
 // console.log(breakfastMeats)
 
-const simplified;
+function capitalize(word) {
+  return word[0].toUpperCase() + word.slice(1, word.length).toLowerCase();
+}
+
+function isUnique(w, i, a) {
+	return a.indexOf(w) === i;
+}
+
+const simplified = breakfastMeats.map(capitalize).filter(isUnique);
 
 /*  Rewrite the above in a functional style. You should use the breakfastMeats.map
   method, as in the "map" exercise. Then filter out duplicates with the

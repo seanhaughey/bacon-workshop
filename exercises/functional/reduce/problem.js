@@ -30,7 +30,19 @@ const breakfastMeats = ['bacon', 'Bacon', 'sausage', 'SauSaGe']
 // console.log(tableData)
 // // => '<p>Bacon</p><p>Sausage</p>'
 
-const paragraphs;
+function capitalize(word) {
+  return word[0].toUpperCase() + word.slice(1, word.length).toLowerCase();
+}
+
+function isUnique(w, i, a) {
+	return a.indexOf(w) === i;
+}
+
+function wrap(pre, post) {
+	return (content, word) => {return content + pre + word + post };
+}
+
+const paragraphs = breakfastMeats.map(capitalize).filter(isUnique).reduce(wrap('<p>', '<p>'), '');
 
 /*  Rewrite the above in a functional style. You should use the breakfastMeats.map
   and breakfastMeats.filter methods from the "map" and "filter" exercies. You

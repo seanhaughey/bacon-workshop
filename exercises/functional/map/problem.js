@@ -11,8 +11,11 @@ const breakfastMeats = ["bacon", "Bacon", "sausage", "SauSaGe"]
 // }
 // // breakfastMeats === ['Bacon', 'Bacon', 'Sausage', 'Sausage']
 // console.log(breakfastMeats)
+function capitalize(word) {
+  return word[0].toUpperCase() + word.slice(1, word.length).toLowerCase()
+}
 
-const capitalized;
+const capitalized = breakfastMeats.map;
 
 /*  Rewrite the above in a functional style. You should use the
   breakfastMeats.map method and define a pure capitalize(word) mapper function.
@@ -21,3 +24,5 @@ const capitalized;
 
 console.log(capitalized)
 // ==> ["Bacon", "Bacon", "Sausage", "Sausage"]
+
+
